@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "CV of kawamataRyo",
   description: "Kawamata Ryoの職務経歴書",
-  base: '/resume/',
+  base: '/',
   head: [
     // favicons
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' }],
