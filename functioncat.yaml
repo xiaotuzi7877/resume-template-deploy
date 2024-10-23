@@ -14,6 +14,7 @@ apps:
       prod:
         build:
           root_path: ./
+          before_script: NODE_VERSION=20
           command: npm install; npm run docs:build
         provision:
           root_path: docs/.vitepress/dist
