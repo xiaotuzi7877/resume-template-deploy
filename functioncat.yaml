@@ -1,0 +1,22 @@
+opensystem: v1.0.0
+info:
+  name: kawamataryo resume 
+envs:
+  prod:
+    branch: master
+routes:
+  main_env: prod
+  main_app: frontend
+apps:
+  frontend:
+    type: web_frontend
+    envs:
+      prod:
+        build:
+          root_path: ./
+          command: npm install; npm run docs:build
+        provision:
+          root_path: docs/.vitepress/dist
+          runtime:
+            type: nodejs18x
+     
